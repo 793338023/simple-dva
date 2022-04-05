@@ -11,7 +11,13 @@
 
 ## 自动加载路由
 
+`router-loader`匹配到对应的注入标志编辑目录生成路由拼接进去
+
+使用`this.addContextDependency`监听目录变化，触发 loader 更新
+
 ## 自动加载 redux
+
+redux 也是类似的方式注入到标志位，但 action、type、saga 合并为 reducer，是运行时操作的，代码查看`zStore`目录
 
 https://blog.csdn.net/yehuozhili/article/details/103997930
 
