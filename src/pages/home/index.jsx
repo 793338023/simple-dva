@@ -7,7 +7,7 @@ function Home(props) {
     <div>
       <div onClick={() => props.dispatch({ type: 'home/asyncAdd' })}> click</div>
       <div onClick={() => props.dispatch({ type: 'home/add' })}> click2</div>
-      <div>{props.number}</div>
+      <div data-if={props.number % 2}>{props.number}</div>
     </div>
   )
 }
